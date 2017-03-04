@@ -1,0 +1,13 @@
+AuthType Basic
+
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+require group administrators
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
